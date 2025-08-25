@@ -26,13 +26,25 @@
 
 ---
 
-<img src="./perfnvim1.gif" width="600" alt="Demo: Add current buffer to Perforce "/>
-<img src="./perfnvim2.gif" width="600" alt="Demo: View checked out files using Telescope"/>
-<img src="./perfnvim3.gif" width="600" alt="Demo: Signs in changed lines"/>
+<p align="center">
+  <img src="./perfnvim1.gif" width="600" alt="Demo: Add current buffer to Perforce"/>
+  <br>
+  <em>Demo: Add current buffer to Perforce</em>
+</p>
+
+<p align="center">
+  <img src="./perfnvim2.gif" width="600" alt="Demo: View checked out files using Telescope"/>
+  <br>
+  <em>Demo: View checked out files using Telescope</em>
+</p>
+
+<p align="center">
+  <img src="./perfnvim3.gif" width="600" alt="Demo: Signs in changed lines"/>
+  <br>
+  <em>Demo: Signs in changed lines</em>
+</p>
 
 ---
-
-
 
 > ⭐ **Like PerfNvim?** Star this repo and share it with your fellow Neovim users!
 
