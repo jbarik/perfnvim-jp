@@ -1,16 +1,40 @@
-# PerfNvim
-PerfNvim is a Neovim plugin designed to integrate Perforce version control operations seamlessly into your workflow. It provides easy-to-use key mappings for common Perforce commands, enhancing your productivity.
+<h1 align="center">PerfNvim</h1>
 
-## Features
+<p align="center">
+  <b>Seamless Perforce integration for Neovim.</b><br>
+  Effortlessly manage your Perforce workflow without leaving your editor.
+</p>
 
-- Add current buffer to Perforce (`p4 add`) <br> <img src="./perfnvim1.gif" width="400"/>  
-- Edit current buffer in Perforce (`p4 edit`)  
-- Select between existing changelists, the Default one, or create a new one on the spot  
-- Revert unchanged files  
-- Signs in changed lines: <br> <img src="./perfnvim3.gif" width="400"/>  
-- Navigate between changed lines  
-- View checked out files using Telescope <br> <img src="./perfnvim2.gif" width="400"/>  
-- Grep checked out files using Telescope  
+<p align="center">
+  <a href="https://github.com/guillemaru/perfnvim/stargazers"><img src="https://img.shields.io/github/stars/guillemaru/perfnvim?style=flat-square" alt="Stars"></a>
+  <a href="https://github.com/guillemaru/perfnvim/issues"><img src="https://img.shields.io/github/issues/guillemaru/perfnvim?style=flat-square" alt="Issues"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/guillemaru/perfnvim?style=flat-square" alt="License"></a>
+</p>
+
+---
+
+## 🚀 Features
+
+- 📄 **Add** current buffer to Perforce (`p4 add`)
+- ✏️ **Edit** current buffer in Perforce (`p4 edit`)
+- 🗂️ **Choose** between existing changelists, the Default one, or create a new one on the spot
+- ♻️ **Revert** unchanged files
+- 🔍 **Signs** in changed lines
+- ⏩ **Navigate** between changed lines
+- 🗃️ **View** checked out files using Telescope
+- 🔎 **Grep** checked out files using Telescope
+
+---
+
+<img src="./perfnvim1.gif" width="600" alt="Demo: Add current buffer to Perforce "/>
+<img src="./perfnvim2.gif" width="600" alt="Demo: View checked out files using Telescope"/>
+<img src="./perfnvim3.gif" width="600" alt="Demo: Signs in changed lines"/>
+
+---
+
+
+
+> ⭐ **Like PerfNvim?** Star this repo and share it with your fellow Neovim users!
 
 ## Installation
 
