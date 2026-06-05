@@ -1,4 +1,5 @@
 local constants = require("perfnvim.constants")
+local file_helpers = require("perfnvim.helpers.file_helpers")
 
 local M = {}
 
