@@ -74,7 +74,7 @@ function M._AnnotateChangedLines(lines, file_path)
 end
 
 function M._AnnotateSigns()
-	local file_path = vim.fn.expand("%:p")
+	local file_path = file_helpers._EncodeP4Path(vim.fn.expand("%:p"))
 	local diff_output = {}
 
 	local function on_stdout(job_id, data, event)
