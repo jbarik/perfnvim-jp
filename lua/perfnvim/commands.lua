@@ -35,7 +35,7 @@ function M.SelectChangelistInteractively(action)
     table.insert(changelists, string.format("New..."))
 
     -- local filepath = vim.api.nvim_buf_get_name(0)
-    local filepath = vim.fn.expand("%:.")
+    local filepath = file_helpers._EncodeP4Path(vim.fn.expand("%:."))
     if filepath == "" then
         print("Cannot add/edit file to a changelist: no file associated with the current buffer.")
         return
