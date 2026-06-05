@@ -30,10 +30,10 @@ end
 function M._EncodeP4Path(path)
     -- Encode Perforce reserved characters: % @ # *
     -- % must be encoded first to avoid double-encoding
-    return (path:gsub("%%", "%%25")
-                :gsub("@", "%%40")
-                :gsub("#", "%%23")
-                :gsub("%*", "%%2A"))
+    return (path:gsub("%%", "\\%%25")
+                :gsub("@", "\\%%40")
+                :gsub("#", "\\%%23")
+                :gsub("%*", "\\%%2A"))
 end
 
 return M
