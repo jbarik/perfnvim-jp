@@ -74,6 +74,13 @@ function M._AnnotateChangedLines(lines, file_path)
 end
 
 function M._AnnotateSigns()
+	-- Only annotate real, on-disk files. Special buffers (oil://, terminal, help, quickfix, ...)
+	-- have a non-empty 'buftype' and a name that isn't a filesystem path; oil in particular fires
+	-- BufWritePost on its own "oil://" buffer when you save a delete. Passing the resulting bogus
+	-- directory to jobstart's cwd throws E475 ("expected valid directory").
+	if vim.bo.buftype ~= "" then
+		return
+	end
 	local file_path = vim.fn.expand("%:p")
 	-- Run "p4 diff" from the file's own directory and pass just the file name, rather than an
 	-- absolute path. The client root may be reached through a symlink (e.g. an AltRoot), in which
