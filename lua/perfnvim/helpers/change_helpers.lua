@@ -176,6 +176,7 @@ function M._AnnotateSigns()
 			or line:find("is not under client's root")
 			or line:find("no such file%(s%)")
 			or line:find("file%(s%) not on client")
+		    or line:find("unknown %- use 'client' command")
 	end
 
 	local function on_exit(job_id, exit_code, event)
