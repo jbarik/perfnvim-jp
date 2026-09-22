@@ -170,6 +170,8 @@ function M._AnnotateSigns()
 	--   "<file> - file(s) not opened for edit."        -- open on client but not for edit
 	--   "Path '...' is not under client's root ..."     -- file outside the client (non-p4 files)
 	--   "<file> - no such file(s)."                     -- not in the depot
+	--   "Client 'X' unknown - use 'client' command ..." -- file outside any workspace; p4 fell
+	--                                                      back to hostname as the client name.
 	local function _IsBenignStderr(line)
 		return line:find("file%(s%) not opened on this client")
 			or line:find("file%(s%) not opened for edit")
